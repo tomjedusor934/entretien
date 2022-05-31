@@ -5,7 +5,6 @@ CREATE TABLE IF NOT EXISTS user (
     email VARCHAR(128) NOT NULL UNIQUE,
     password VARCHAR(128) NOT NULL,
     username VARCHAR(50) NOT NULL,
-    role ENUM("user", "admin", "moderator") NOT NULL DEFAULT "user",
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 CREATE TABLE IF NOT EXISTS news (
