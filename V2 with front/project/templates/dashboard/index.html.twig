@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #EE82EE; padding: 10px 6px; }
+</style>
+
+<div class="grix xs2 sm3 gutter-1 card">
+    <div class="col-xs2 col-sm3">
+        {# <h2>liste des commentaires</h2> #}
+        {# {% for comment in
+         comment %}
+            {{dump(comment)}}
+        {%  endfor %} #}
+    </div>
+    <div class="col-xs4 col-sm3">
+        <h2>ajouter un commentaire</h2>
+        {{ form(commentForm) }}
+    </div>
+</div>
+{% endblock %}
